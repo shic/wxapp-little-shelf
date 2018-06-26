@@ -8,9 +8,10 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "1.9.94",
+	"libVersion": "2.1.1",
 	"isGameTourist": false,
-	"appid": "/** this is your appid **/",
+	"appid": "wxddde351ffd529544",
+	"projectname": "%E4%BC%98%E6%99%AE%E6%AC%A7%E6%B4%B2",
 	"condition": {
 		"search": {
 			"current": -1,

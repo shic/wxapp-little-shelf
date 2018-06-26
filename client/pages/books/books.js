@@ -57,7 +57,7 @@ Page({
             },
             success: function(res) {
                 let data = res.data;
-                // console.log(data);
+                console.log(data);
 
                 if (data.result === 0) {
                     setTimeout(function() {
