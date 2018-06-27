@@ -13,10 +13,10 @@ Page({
      */
     data: {
         bookList: [],           // 书籍列表数组
-        indicatorDots: false,   // 是否显示轮播指示点
+        indicatorDots: true,   // 是否显示轮播指示点
         autoplay: false,        // 是否自动播放轮播
         interval: 5000,         // 轮播间隔
-        duration: 1000,         // 轮播播放延迟
+        duration: 300,         // 轮播播放延迟
         circular: true,         // 是否采用衔接滑动
         sideMargin: '100rpx',   // 幻灯片前后边距
         showLoading: true       // 是否显示loading态

@@ -13,6 +13,8 @@ const getBoughtBooksUrl = baseUrl + 'api/user/getBoughtBooks';
 // 兑换书籍接口
 const buyBookUrl = baseUrl + 'api/order/buy';
 
+const baseUrlPlus = 'http://127.0.0.1:3033/';
+
 
 module.exports = {
 	getBooksUrl: 		getBooksUrl,

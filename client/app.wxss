@@ -1,4 +1,5 @@
 /**app.wxss**/
+/* container */
 .container {
   height: 100%;
   display: flex; 
@@ -8,6 +9,10 @@
   padding: 100rpx 0;
   box-sizing: border-box;
   /*border: 1px solid green;*/
+}
+.container-row {
+  display: flex;
+  flex-direction: row;
 }
 
 page {

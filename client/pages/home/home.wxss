@@ -1,4 +1,5 @@
 /* pages/books/books.wxss */
+@import '../../common/common.wxss';
 
 .swiper-container {
 	/*border: 1px solid red;*/
@@ -83,3 +84,4 @@
 .donut-container {
 	padding-top: 200rpx;
 }
+
