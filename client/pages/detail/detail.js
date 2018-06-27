@@ -37,7 +37,7 @@ Page({
 
     readBook: function() {
         let that = this;
-        let fileUrl = that.data.bookInfo.file;
+        let fileUrl = 'https://nodejs.org/en/user-survey-report/2018-nodejs-user-survey-report.pdf'; //that.data.bookInfo.file;
         let key = 'book_' + that.data.bookInfo.id;
         // 书籍是否已下载过
         let downloadPath = app.getDownloadPath(key);
