@@ -36,6 +36,9 @@ function authMiddleware (req) {
         }
     }
 
+    console.log('authMiddleware code: ', code);
+    console.log('authMiddleware encryptedData: ', encryptedData);
+
     // 获取 session_key和 openid
     return getSessionKey(code, appid, secret)
         .then(resData => {
@@ -65,12 +68,15 @@ function authMiddleware (req) {
 
 /**
  * 获取当前用户session_key
- * @param {*用户临时登录凭证} code 
- * @param {*小程序appid} appid 
- * @param {*小程序密钥} appSecret 
+ * @param {*用户临时登录凭证} code
+ * @param {*小程序appid} appid
+ * @param {*小程序密钥} appSecret
  */
 function getSessionKey (code, appid, appSecret) {
-    
+
+    console.log('getSessionKey code: ', code);
+    console.log('getSessionKey appid: ', appid);
+    console.log('getSessionKey appSecret: ', appSecret);
     const opt = {
         method: 'GET',
         url: 'https://api.weixin.qq.com/sns/jscode2session',
@@ -81,10 +87,11 @@ function getSessionKey (code, appid, appSecret) {
             grant_type: 'authorization_code'
         }
     };
-   
+
     return http(opt).then(function (response) {
         const data = response.data;
-        
+
+        console.log('getSessionKey: ', data);
         if (!data.openid || !data.session_key || data.errcode) {
             return {
                 result: -2,
@@ -93,7 +100,7 @@ function getSessionKey (code, appid, appSecret) {
         } else {
             return data
         }
-        
+
     });
 }
 module.exports = {
