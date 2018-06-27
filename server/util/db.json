@@ -1,0 +1,91 @@
+{
+  "posts": [
+    {
+      "creationDate": 1528762319616,
+      "id": "post-1",
+      "title": "短租单人间：7月11到9月5日",
+      "description": "距离A线地铁站ponte lungo 280米走路只需2分钟，距离Tuscolana火车站只需3分钟，房间自带超级大阳台，阳光充足，有钢琴(音乐学院考前生看这里[微笑])楼下24小时超市Tod's，tabacchi，小香港中餐点，二黑超市，复印店，肉店，canad超市，中国人理发店，生活超级方便",
+      "name": "郑某",
+      "email": "shi@uupper.com",
+      "address": "via po 23, roma",
+      "author": {
+        "id": {
+          "id": "user-1",
+          "version": 4
+        }
+      },
+      "price": 460.8,
+      "danWei": "eur/mese",
+      "primaryTags": [
+        {"tag":"Rent"}
+      ],
+      "secondaryTags": [
+        {"tag":"Near Metro"},
+        {"tag":"City Center"}
+      ],
+
+      "medias": [
+        {
+          "id": {
+            "id": "media-ext-1",
+            "version": 4
+          },
+          "externalMedia": true,
+          "externalurl": "image/png",
+          "mimeType": "image/png",
+          "playTimeMillis": 0,
+          "width": 200,
+          "height": 200,
+          "creationDate": 1528762319616,
+          "fluidData": {}
+        },
+        {
+          "id": {
+            "id": "media-ext-2",
+            "version": 4
+          },
+          "externalMedia": true,
+          "mimeType": "image/png",
+          "playTimeMillis": 0,
+          "width": 200,
+          "height": 200,
+          "creationDate": 1528762319616,
+          "fluidData": {}
+        }
+      ],
+      "participants": [],
+      "comments": [
+        { "id": "comment-1", "body": "some comment" }
+      ]
+    }
+  ],
+
+  "users": [
+    {
+      "id": {
+        "id": "user-1",
+        "version": 1
+      },
+      "wxId": "oCePD5N5AWJMgvIS9xTLYvNfdnas",
+      "wxKey": "d3a2243cf6f6823897308627bf5f091407c5b26f",
+      "wxSessionkey": "Aft55MA8fQJQKd4EdpGthg",
+      "gender": "MALE",
+      "city":"Roma",
+      "country":"Italy",
+      "province": "",
+      "name": "Shi Lei",
+      "email": {
+        "email": "",
+        "validated": false
+      },
+      "address": "via po 23, roma",
+      "phoneNumber": {
+        "phoneNumber": "3883425556",
+        "validated": false,
+        "mobile": false,
+        "valid": false
+      }
+    }
+  ]
+
+}

@@ -1,6 +1,7 @@
 {
     "pages": [
         "pages/books/books",
+        "pages/home/home",
         "pages/my/my",
         "pages/myBooks/myBooks",
         "pages/detail/detail",
@@ -14,17 +15,26 @@
         "enablePullDownRefresh": false
     },
     "tabBar": {
-        "list": [{
+        "list": [
+          {
+            "pagePath": "pages/home/home",
+            "text": "首页",
+            "iconPath": "images/book.png",
+            "selectedIconPath": "images/bookSelected.png"
+          },
+          {
             "pagePath": "pages/books/books",
             "text": "书架",
             "iconPath": "images/book.png",
             "selectedIconPath": "images/bookSelected.png"
-        }, {
+          },
+          {
             "pagePath": "pages/my/my",
             "text": "我的",
             "iconPath": "images/my.png",
             "selectedIconPath": "images/mySelected.png"
-        }],
+          }
+        ],
         "color": "#bfbfbf",
         "selectedColor": "#1AAD19"
     },
