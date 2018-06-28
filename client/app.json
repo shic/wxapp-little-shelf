@@ -5,7 +5,8 @@
         "pages/my/my",
         "pages/myBooks/myBooks",
         "pages/detail/detail",
-        "pages/comment/comment"
+        "pages/comment/comment",
+        "pages/testPage/testPage"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -33,7 +34,13 @@
             "text": "我的",
             "iconPath": "images/my.png",
             "selectedIconPath": "images/mySelected.png"
-          }
+          },
+                    {
+                      "pagePath": "pages/testPage/testPage",
+                      "text": "test",
+                      "iconPath": "images/my.png",
+                      "selectedIconPath": "images/mySelected.png"
+                    }
         ],
         "color": "#bfbfbf",
         "selectedColor": "#1AAD19"

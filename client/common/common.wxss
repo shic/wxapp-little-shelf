@@ -6,22 +6,3 @@
   width: 750rpx;
   text-align: center;
 }
-
-.tag-button {
-  position: relative;
-  width: 100rpx;
-  height: 100rpx;
-  text-align: center;
-}
-
-
-.tag-button-container {
-	/*border: 1px solid black;*/
-
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-
-	padding: 20rpx;
-}

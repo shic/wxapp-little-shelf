@@ -12,14 +12,36 @@ Page({
      * 页面的初始数据
      */
     data: {
-        bookList: [],           // 书籍列表数组
+      sliderList: ['../../images/home_slider_1.jpg', '../../images/home_slider_2.jpg'],           // 书籍列表数组
+      bookList: [],           // 书籍列表数组
         indicatorDots: true,   // 是否显示轮播指示点
-        autoplay: false,        // 是否自动播放轮播
+        autoplay: true,        // 是否自动播放轮播
         interval: 5000,         // 轮播间隔
         duration: 300,         // 轮播播放延迟
         circular: true,         // 是否采用衔接滑动
         sideMargin: '100rpx',   // 幻灯片前后边距
         showLoading: true       // 是否显示loading态
+    },
+
+    /**
+     * goByTag
+     */
+    goByTag: function (ev) {
+
+      let info = ev.currentTarget.dataset;
+
+      let navigateUrl = '../detail/detail?';
+
+      for (let key in info) {
+        info[key] = encodeURIComponent(info[key]);
+        navigateUrl += key + '=' + info[key] + '&';
+      }
+
+      navigateUrl = navigateUrl.substring(0, navigateUrl.length - 1);
+      console.log('goByTag: ', navigateUrl);
+      wx.navigateTo({
+        url: navigateUrl
+      });
     },
 
     /**

@@ -1,0 +1,25 @@
+.button{
+  margin-bottom: 30rpx;
+}
+
+.button:last-child{
+  margin-bottom: 0;
+}
+
+.button-tag-container {
+	/*border: 1px solid black;*/
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	margin: 20rpx;
+}
+
+.button-tag {
+  position: relative;
+  width: 100rpx;
+  height: 100rpx;
+  text-align: center;
+}
