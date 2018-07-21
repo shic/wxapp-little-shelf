@@ -60,11 +60,18 @@ App({
                         withCredentials: true, // 非必填, 默认为true
 
                         success: function (infoRes) {
-                            console.log(infoRes,'>>>')
+                          console.log(infoRes, '>>>')
+                          console.log("Login code: ", loginRes.code)
+                          console.log("Login rawData: ", infoRes.rawData)
+                          console.log("Login signature: ", infoRes.signature)
+                          console.log("Login encryptedData: ", infoRes.encryptedData)
+                          console.log("Login iv: ", infoRes.iv)
+                          // console.log("Login : ", infoRes.)
+                            
                             // 请求服务端的登录接口
                             wx.request({
                                 url: api.loginUrl,
-
+                                
                                 data: {
                                     code: loginRes.code,                    // 临时登录凭证
                                     rawData: infoRes.rawData,               // 用户非敏感信息
